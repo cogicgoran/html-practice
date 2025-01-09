@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+</head>
+<body>
+    <!-- have a button POST a click via AJAX -->
+    <div>
+        <h2>Articles</h2>
+        <button hx-post="/articles" hx-swap="outerHTML">
+          Load
+        </button>
+    </div>
+</body>
+</html>
